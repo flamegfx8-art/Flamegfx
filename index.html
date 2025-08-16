@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Graphic Design Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .portfolio img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .about, .contact {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    button {
+      background: #111;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Graphic Design Portfolio</h1>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="portfolio" class="portfolio">
+      <img src="https://via.placeholder.com/400x250.png?text=Design+1" alt="Design 1">
+      <img src="https://via.placeholder.com/400x250.png?text=Design+2" alt="Design 2">
+      <img src="https://via.placeholder.com/400x250.png?text=Design+3" alt="Design 3">
+      <img src="https://via.placeholder.com/400x250.png?text=Design+4" alt="Design 4">
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm a graphic designer who loves creating thumbnails, posters, and digital artwork. This is my portfolio where I showcase my work. I believe in creativity, simplicity, and unique design ideas.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>If you like my work and want to collaborate, feel free to reach out!</p>
+      <button onclick="window.location.href='mailto:your-email@example.com'">Email Me</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Graphic Design Portfolio</p>
+  </footer>
+</body>
+</html>
